@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter Factory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Фабрика лічильників (Замикання)</h3>
+
+<div class="counter-box" id="box-basic">
+    <h4>Базовий лічильник</h4>
+    <span class="value" id="val-basic">0</span>
+    <button id="btn-basic-dec">-</button>
+    <button id="btn-basic-inc">+</button>
+</div>
+
+<div class="counter-box" id="box-limited">
+    <h4>Лімітований (від 0 до 5)</h4>
+    <span class="value" id="val-limited">0</span>
+    <button id="btn-limited-dec">-</button>
+    <button id="btn-limited-inc">+</button>
+</div>
+
+<div class="counter-box" id="box-step">
+    <h4>З кроком (крок 10)</h4>
+    <span class="value" id="val-step">0</span>
+    <button id="btn-step-dec">-10</button>
+    <button id="btn-step-inc">+10</button>
+</div>
+
+<div class="counter-box" id="box-named">
+    <h4>Іменний лічильник з історією</h4>
+    <span class="value" id="val-named">0</span>
+    <button id="btn-named-dec">-</button>
+    <button id="btn-named-inc">+</button>
+    <button id="btn-named-hist">Показати історію в консолі (F12)</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

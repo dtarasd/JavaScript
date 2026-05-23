@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Cache & Lazy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Cache Manager та ледачі обчислення</h3>
+
+<div class="test-section">
+    <h4>1. Cache Manager</h4>
+    <button id="btn-cache-set">Додати в кеш (TTL 2с)</button>
+    <button id="btn-cache-get">Отримати з кешу</button>
+    <button id="btn-cache-stats">Статистика</button>
+    <div id="out-cache" class="output">Результати кешу...</div>
+</div>
+
+<div class="test-section">
+    <h4>2. Lazy Evaluation (Прості числа)</h4>
+    <button id="btn-lazy-take">Взяти 5 простих чисел</button>
+    <button id="btn-lazy-map">Взяти 5 і помножити на 10 (map)</button>
+    <div id="out-lazy" class="output">Результати lazy...</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
