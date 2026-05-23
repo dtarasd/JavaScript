@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f4f5f7;
+}
+
+.controls button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.controls button:hover {
+    background-color: #0b5ed7;
+}
+
+.log-box {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 250px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: #333;
+}
+
+.log-error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.log-success {
+    color: #198754;
+    font-weight: bold;
+}
