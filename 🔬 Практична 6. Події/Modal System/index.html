@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="btn-alert">Відкрити Alert</button>
+<button id="btn-confirm">Відкрити Confirm</button>
+
+<!-- темний фон, який перекриває сторінку -->
+<div class="overlay" id="modal-overlay"></div>
+
+<!-- перше модальне вікно (інформаційне) -->
+<div class="modal" id="modal-alert">
+    <h3>Увага!</h3>
+    <p>Це просте інформаційне повідомлення.</p>
+    <button class="close-btn">Зрозуміло</button>
+</div>
+
+<!-- друге модальне вікно (з вибором) -->
+<div class="modal" id="modal-confirm">
+    <h3>Підтвердження</h3>
+    <p>Ти дійсно хочеш видалити цей файл?</p>
+    <button class="close-btn" style="background-color: #dc3545;">Так, видалити</button>
+    <button class="close-btn">Ні, скасувати</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
