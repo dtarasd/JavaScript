@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Управління автопарком (ООП)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Система управління транспортом</h3>
+
+<div class="panel">
+    <h4>Додати новий транспорт</h4>
+    <div class="form-group">
+        <select id="v-type">
+            <option value="Car">Легковий (Car)</option>
+            <option value="Truck">Вантажівка (Truck)</option>
+            <option value="Motorcycle">Мотоцикл (Motorcycle)</option>
+        </select>
+        <input type="text" id="v-brand" placeholder="Бренд (напр. Toyota)">
+        <input type="text" id="v-model" placeholder="Модель (напр. Camry)">
+        <input type="number" id="v-year" placeholder="Рік випуску">
+        <input type="text" id="v-extra" placeholder="Додатково (Двері/Вантаж/Тип)">
+        <button id="btn-add">Додати в автопарк</button>
+    </div>
+</div>
+
+<div class="panel">
+    <h4>Управління та фільтрація</h4>
+    <button id="btn-stats">Показати статистику</button>
+    <button id="btn-filter-car">Тільки легкові</button>
+    <button id="btn-show-all">Показати всі</button>
+    <div id="stats-output" class="stats"></div>
+</div>
+
+<div id="fleet-list"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
