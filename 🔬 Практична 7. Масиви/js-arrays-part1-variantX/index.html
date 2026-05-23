@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Система студентів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Управління студентами</h3>
+
+<div>
+    <input type="text" id="s-name" placeholder="Ім'я">
+    <input type="number" id="s-age" placeholder="Вік">
+    <input type="number" id="s-grade" placeholder="Бал">
+    <input type="text" id="s-faculty" placeholder="Факультет">
+    <button id="btn-add">Додати</button>
+</div>
+
+<div style="margin-top: 10px;">
+    <button id="btn-sort">Сортувати за балом</button>
+    <button id="btn-stats">Показати статистику</button>
+    <input type="text" id="s-search" placeholder="Пошук за ім'ям">
+    <button id="btn-search">Знайти</button>
+</div>
+
+<div id="output" style="margin-top: 20px;"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
