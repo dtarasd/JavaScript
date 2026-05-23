@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма та Пошук</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Форма з валідацією</h3>
+<div class="progress-container">
+    <div class="progress-bar" id="progress"></div>
+</div>
+
+<form id="my-form">
+    <div>
+        <input type="text" id="name" placeholder="Ім'я (тільки літери)">
+        <span class="error" id="name-error"></span>
+    </div>
+    <div>
+        <input type="email" id="email" placeholder="Email">
+        <span class="error" id="email-error"></span>
+    </div>
+    <div>
+        <input type="text" id="phone" placeholder="Телефон (+380...)">
+        <span class="error" id="phone-error"></span>
+    </div>
+    <div>
+        <textarea id="message" placeholder="Повідомлення (20-500 символів)"></textarea>
+        <span class="error" id="message-error"></span>
+    </div>
+    <button type="submit" id="submit-btn" disabled>Відправити</button>
+</form>
+
+<hr>
+
+<h3>Пошук по списку</h3>
+<input type="text" id="search" placeholder="Пошук фруктів...">
+<div id="no-results" style="display: none; color: red;">Не знайдено</div>
+<ul id="search-list"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
