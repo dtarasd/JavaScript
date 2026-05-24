@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h3>GitHub User Explorer</h3>
+    <div class="search-box">
+        <input type="text" id="username-input" placeholder="Введіть username GitHub...">
+        <select id="sort-select" style="padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+            <option value="updated">Оновлені</option>
+            <option value="stars">Зірки</option>
+            <option value="forks">Форки</option>
+        </select>
+        <button id="search-btn">Знайти</button>
+    </div>
+    <div id="loading" class="hidden">Завантаження...</div>
+    <div id="error-msg" class="hidden error"></div>
+    <div id="profile" class="hidden"></div>
+    <div id="repos" class="hidden"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
